@@ -1,0 +1,46 @@
+/*
+Theme Name: She-Bytes
+Theme URI: http://she-bytes.com
+Description: Custom WordPress theme developed with love (& lots of coffee!) for She-Bytes
+Author: She Gerber
+Author URI: http://shegerber.me
+Version: 1.0.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: [tags go here];
+*/
+
+@import "base/_normalize.css";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+
+
+@import "main/_sprite";
+@import "main/_container";
+@import "main/_content";
+@import "main/_row";
+@import "main/_section";
+@import "main/_wrapper";
+
+
+@import "modules/_main-header";
+@import "modules/_main-nav";
+@import "modules/_main-hero";
+@import "modules/_main-footer";
+@import "modules/_btn";
+@import "modules/_footer-nav";
+@import "modules/_social-icons";
+@import "modules/_box";
+@import "modules/_contact-info";
+@import "modules/_modal-contact";
+@import "modules/_show-items";
+@import "modules/_zig-zag";
+@import "modules/_sticky-note";
+
+
+
+
+
+
+

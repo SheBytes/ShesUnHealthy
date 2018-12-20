@@ -1,0 +1,88 @@
+.section {
+	margin: 20px auto;
+
+	@mixin forSml {
+		margin: 50px auto;
+	}
+
+	&--max {
+		max-width: 1200px;      /* SHE -> 1400  */
+		padding: 0 25px;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--keyboard {
+		background: url(../images/keyboard.png);
+		background-position: center;
+		background-size: cover;
+		color: #fff;
+		font-size: 4rem;
+		font-weight: 500;
+		padding: 50px 0;
+		text-align: center;
+
+		@mixin forMed {
+			font-size: 5rem;
+			padding: 70px 0;
+		}
+	}
+	
+	&__title {
+		color: $darkColor;
+		font-family: $h1Font;
+		font-size: 1.7rem;
+		font-weight: 400;
+		margin: 0 auto;
+		padding: 40px 0 0;
+		text-align: center;
+
+		span {
+			color: $mainColor;
+		}
+
+		@mixin forSml {
+			font-size: 2rem;
+		}
+
+		@mixin forMed {
+			font-size: 3rem;
+		}
+	}
+
+
+	&__contact {
+		font-family: $lowCaseFont;
+		font-weight: 600;
+		height: 195px;
+		padding-top: 50px;
+
+		@mixin forMed {
+			border-left: 1px solid #ccc;
+			padding-top: 30px;
+		}
+
+		&--call {
+			margin-top: 0;
+			font-size: 2rem;
+		}
+
+		&--mail {
+			font-size: 1.5rem;
+			margin-top: 0;
+			padding-top: 0;
+
+			@mixin forMed {
+				padding-top: 10px;
+			}
+
+		}
+		
+		a {
+			color: $darkColor;
+			text-decoration: none;
+		}
+	}
+}

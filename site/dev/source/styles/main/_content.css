@@ -1,0 +1,38 @@
+.content {
+
+	p {
+		color: $darkColor; 
+		font-family: $bodyFont;
+		font-size: 1.35rem;
+		font-weight: 200;
+		line-height: 1.65; 
+		margin: 20px auto 1rem;
+		max-width: 850px; 
+		width: 100%;
+
+		@mixin forSml {
+			font-size: 1.65rem;
+		}
+
+		& a {
+				font-weight: 700;
+			}
+
+		& span {
+				color: $minorTwoColor;
+				font-weight: 500;
+
+			}
+	}
+
+
+
+	.pink {
+		background-color: $lightColor;
+		color: $mainColor;
+		font-weight: 700;
+	}
+
+}
+
+

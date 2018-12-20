@@ -1,0 +1,37 @@
+/***  START Global   ***/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $lightColor;
+	font-family: $bodyFont, sans-serif;
+	color: $darkColor;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	color: $darkColor;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.floatleft {
+	float: left;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+/***  END Global   ***/

@@ -1,0 +1,69 @@
+/***  START Main Footer  ***/
+.main-footer {
+	background-color: $darkColor;
+	border-top: 10px solid $mainColor;
+	color: $lightDarkColor;
+	padding: .3rem 0;
+
+	&__love {
+		display: inline-block;
+		margin: 20px -13px -15px;
+		position: relative;
+		transform: scale(.4);
+
+		@mixin forMed {
+			margin: 0 -10px -15px;
+			transform: scale(.6);
+		}
+	}
+
+	&__social {
+		font-family: $upCaseFont;
+		font-size: 1rem;
+		text-align: center;
+
+			@mixin forMed {
+				font-size: 1.25rem;
+				padding: 70px 0;
+			}
+
+			@mixin forLrg {
+				font-size: 1.55rem;
+			}
+	}
+
+	&__contact {
+		margin-top: 50px;
+		padding-left: 40px;
+
+	}
+
+
+
+
+
+
+	&__copy {
+		border-top: 3px solid $mainColor;
+		font-family: $lowCaseFont;
+		font-size: .75rem;
+		margin-top: 20px;
+		padding: 40px 0 20px;
+		text-align: center;
+
+			@mixin forMed {
+				font-size: .8rem;
+			}
+
+			@mixin forLrg {
+				font-size: 1rem;
+			}
+
+		a {
+			color: $mainColor;
+		}
+	}
+
+
+}
+/***  END Main Footer  ***/

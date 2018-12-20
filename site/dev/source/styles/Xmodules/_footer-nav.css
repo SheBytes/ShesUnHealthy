@@ -1,0 +1,50 @@
+.footer-nav {
+	ul {
+		text-align: center;
+
+		@mixin forMed {
+			text-align: left;
+		}
+	}
+
+	li {
+		display: inline-block;
+		border-right: 1px solid $mainColor;
+		list-style: none;
+		padding: 0 15px;
+
+		@mixin forMed {
+			border-right: 0;
+			display: block;
+			padding: 10px 20px;
+		}
+	}
+
+	li:last-child {
+		border-right: 0;
+	}
+
+	a {
+		color: $lightDarkColor;
+		font-size: .75rem;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&.current-list-item,
+		&:hover {
+			color: $mainColor;
+		}
+
+		@mixin forMed {
+			display: block;
+			font-size: 1rem;
+			padding-top: 10px;
+			padding-left: 40px;
+		}
+
+		@mixin forLrg {
+			font-size: 1.35rem;
+			padding-left: 60px;
+		}
+	}
+}
